@@ -12,5 +12,6 @@ def num_tokens_from_string(string: str, encoding_name: str) -> int:
     return num_tokens
 
 
-tokens = num_tokens_from_string(prompt, "gpt-4")
-print(f"Number of tokens: {tokens}")
+if __name__ == "__main__":
+    tokens = num_tokens_from_string(prompt, "gpt-4")
+    print(f"Number of tokens: {tokens}")
